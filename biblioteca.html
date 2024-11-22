@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+        defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav id="navbar" class="navbar navbar-expand-lg fixed-top color-barra">
+            <div class="container-fluid">
+                <!-- Menú hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-1 text-light"></i>
+                </button>
+                <!-- Logo -->
+                <a class="navbar-brand text-light titulo-secundario" href="#"><img src="img/logo.png" width="50"
+                        alt=""></a>
+                <!-- Enlaces -->
+                <div class="collapse navbar-collapse d-flex justify-content-center d-none d-lg-flex"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0 fs-5 titulo-secundario">
+                        <li class="nav-item">
+                            <a class="nav-link text-light active" aria-current="page" href="index.html"
+                                target="_self">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light active" aria-current="page"
+                                href="biblioteca.html">Biblioteca</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light active" aria-current="page" href="#genero">Género</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light active" aria-current="page" href="#">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title titulo-secundario" id="offcanvasRightLabel">Menú</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav  mb-2 mb-lg-0 titulo-secundario">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="biblioteca.html">Biblioteca</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#genero">Género</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+       
+        <section class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="container my-5">
+                        <div class="card mb-3">
+                            <img src="img/lib.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h1 class="card-title">Biblioteca</h1>
+                                <p class="card-text">Todo lo necesario para tu estudio!</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- Tarjeta 1 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Von Wright <br> - Norma y Acción</h3>
+                                        <p class="card-text">Una investigación lógica</p>
+                                        <a href="https://drive.google.com/file/d/1soOXxETbDD1KzTXv9yyvY8LPtCmMyn-E/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tarjeta 2 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Tratado de Derecho Administrativo Gordillo</h3>
+                                        <p class="card-text">TEORÍA GENERAL DEL DERECHO ADMINISTRATIVO</p>
+                                        <a href="https://drive.google.com/file/d/1YOdhP75-JaNjbItz_g6t_3XeKhdFYfgg/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tarjeta 3 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Teoría + Géneral + del + proceso + tomo II</h3>
+                                        <p class="card-text">Teoría general del proceso</p>
+                                        <a href="https://drive.google.com/file/d/1m2hfkSl9xe0s3-FDp4yR5Etia0StE7Ib/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 4 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Teoría + Géneral + del + proceso + tomo I</h3>
+                                        <p class="card-text">Teoría general del proceso</p>
+                                        <a href="https://drive.google.com/file/d/1m2hfkSl9xe0s3-FDp4yR5Etia0StE7Ib/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 5 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Teoría del derecho ambiental lorenzetti-ricardo luis</h3>
+                                        <p class="card-text">Teoría del derecho ambiental</p>
+                                        <a href="https://drive.google.com/file/d/1m2hfkSl9xe0s3-FDp4yR5Etia0StE7Ib/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 6 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Teoría del caso</h3>
+                                        <p class="card-text">Manual de derecho procesal penal</p>
+                                        <a href="https://drive.google.com/file/d/1NvhVwRGdHdstbYmDCvHdQLZylGyspsCR/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 7 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Soto - Manual de derecho de la integración</h3>
+                                        <p class="card-text">Segunda edición actualizada</p>
+                                        <a href="https://drive.google.com/file/d/182CIaJ6XPx40Tnx57xO4Paq16P71UhG1/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 8 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Sancinetti- Casos de Penal Parte Gral 2</h3>
+                                        <p class="card-text">Teoría del hecho punible</p>
+                                        <a href="https://drive.google.com/file/d/1MJjtqsK5nGsTG4tPREXVMHeEhxGUp7Hb/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 9 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Sancinetti - Casos de Penal Parte Gral 1</h3>
+                                        <p class="card-text">Parte general</p>
+                                        <a href="https://drive.google.com/file/d/1V71iMxrgUHWV-V9GFWSKGzmeSZ8yPOky/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 10 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Responsabilidad Parental</h3>
+                                        <p class="card-text">Miembro de Número de la Academia Nacional de Derecho
+                                            y Ciencias Sociales de Buenos Aires y de la Academia del Plata
+                                            Ex Profesor de Derecho Civil en las Facultades de Derecho
+                                            de la UBA y de la UCA</p>
+                                        <a href="https://drive.google.com/file/d/1aFDlXTtit8rc4ppl5etgKInGv7qO9jLd/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 11 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Procesos de protección en violencia de género 2020</h3>
+                                        <p class="card-text">Procedimiento en fueros de familia y penal.
+                                            Intervención de organismo de Promoción y Protección de los Derechos
+                                            del Niño, Niña y adolescente.</p>
+                                        <a href="https://drive.google.com/file/d/1K67zD8h4R1vDXB5MphBBvmSikWcyjiG7/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 12 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Procesal-1-Tomo-2-Maier-ed-2004</h3>
+                                        <p class="card-text">Derecho Procesal Penal</p>
+                                        <a href="https://drive.google.com/file/d/1oozkflRNSi60NyUNkIWSU9RoK-55Dj_J/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 13 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Procesal-1-Tomo-1-Maier-ed-2004</h3>
+                                        <p class="card-text">Derecho Procesal Penal</p>
+                                        <a href="https://drive.google.com/file/d/1Xiw3SN712sh-3UCGwI5hg0cw7OBNqsXZ/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 14 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Práctica Accidentes de Trabajo- Mac Donald - 2017</h3>
+                                        <p class="card-text">Pr&tica Accidentes de %bajo : Refma Ley 22348 / Andrea
+                                            Fabiana Mac Donald. - Ira ed. - Ciudad Axitónoma & Buenos Aires:
+                                            Jurídicas, 2017.</p>
+                                        <a href="https://drive.google.com/file/d/1sWzt7rcTCsvHFxU5CpGWQYuPcuElFnTw/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 15 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Poder-policia-historia-jurisprudencia-doctrina</h3>
+                                        <p class="card-text">Legarre, Santiago/ Publicado en: LA LEY2000-A, 999</p>
+                                        <a href="https://drive.google.com/file/d/1loiUS1TNDhBCqV-JK9jaT5fpCW08Eo7t/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 16 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Pigretti - Derecho Ambiental</h3>
+                                        <p class="card-text">EDUARDO A. PIGRETTI / I.S.B.N.: 987-1127-17-0</p>
+                                        <a href="https://drive.google.com/file/d/1mvZoiTO7kENZmJpKoaVqZpXsTV_7GFsp/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 17 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Pensar como un abogado-SCHAUER FEDERICK</h3>
+                                        <p class="card-text">Colección Filosofía y Derecho</p>
+                                        <a href="https://drive.google.com/file/d/1sHUt8lzWC_g4UyvZS7QdeWvRmpYS_pHw/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 18 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Borda-Derecho Civil_Parte General-2017</h3>
+                                        <p class="card-text">Guillermo J. Borda</p>
+                                        <a href="https://drive.google.com/file/d/19DzXpQzlJTbYGombOnDBgp6UEUbDVb81/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 19 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Guía Práctica Profesional- Alquileres y Desalojos</h3>
+                                        <p class="card-text">Mariano C. Otero - Leticia D. Garay - Ma. José Herrera</p>
+                                        <a href="https://drive.google.com/file/d/1I5SLbeQ6Q3VlFjv7WfWyjgCBZyiD-Phc/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 20 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Módulo 2 - Libro Domingues Henain - Derecho Penal</h3>
+                                        <p class="card-text">Daniel Domingues Henain</p>
+                                        <a href="https://docs.google.com/document/d/1mC54t6ZvT57IzIRzJE7gP1rIM6cAQ64f/edit?usp=drive_link&ouid=115342902189944661559&rtpof=true&sd=true"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 21 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Módulo 1 - Libro Domingues Henain - Penal Parte General
+                                        </h3>
+                                        <p class="card-text">Daniel Domingues Henain</p>
+                                        <a href="https://docs.google.com/document/d/1-tvnyYb5QKFKTSCKxlnLt-P3tZNoI00p/edit?usp=drive_link&ouid=115342902189944661559&rtpof=true&sd=true"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 22 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Tratado de Derecho Administrativo - Tomo 1-2</h3>
+                                        <p class="card-text">Marienhoff, Miguel S</p>
+                                        <a href="https://drive.google.com/file/d/13ygAyWSQKjlZs9pN3VIQHoyInvrlGlaJ/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 23 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Manual de Obligaciones Civiles y Comerciales - 2da ED
+                                        </h3>
+                                        <p class="card-text">Sandra M. Wierzba</p>
+                                        <a href="https://drive.google.com/file/d/1FemlteBjaqDz2arvXm2dPMD3m3Rcg1jD/view?usp=drive_linkk"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 24 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Manual de Derecho Político
+                                        </h3>
+                                        <p class="card-text">Mario Justo López</p>
+                                        <a href="https://drive.google.com/file/d/1bMIyxMBaT7bXqZZY9j3b3cU1nrIvgh-i/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 25 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Manual de Derecho Procesal Civil
+                                        </h3>
+                                        <p class="card-text">Lino Enrique Palacio</p>
+                                        <a href="https://drive.google.com/file/d/1oOfi0QW8yHgsn-0evQi95pTAproB9S2e/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 26 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Manual Derecho Penal
+                                        </h3>
+                                        <p class="card-text">Ricardo Nuñez</p>
+                                        <a href="https://drive.google.com/file/d/1S_lGLV2l-LrRv9eS8SrWv8vBkABPk8xT/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 27 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Manual de Obligaciones
+                                        </h3>
+                                        <p class="card-text">Alejandro Atilio Taraborrelli</p>
+                                        <a href="https://drive.google.com/file/d/16fj2YZMHcfFjnkU8z4-ycwE0xoRpuzPJ/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 28 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Manual de Derechos Reales
+                                        </h3>
+                                        <p class="card-text">Claudio Kiper</p>
+                                        <a href="https://drive.google.com/file/d/1QEuxtFsdXbsLphLzV8x8lV9fEGwEolkG/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 29 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Manual de Derecho Sucesorio
+                                        </h3>
+                                        <p class="card-text">Marisa Herrera</p>
+                                        <a href="https://drive.google.com/file/d/1NXNZF4RJo4LXa7h4weTaaWoiu5h2XDkc/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 30 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Manual de Derecho Constitucional
+                                        </h3>
+                                        <p class="card-text">Nestor Pedro Sagues</p>
+                                        <a href="https://drive.google.com/file/d/1JfZc6xtHl7jxDPmixULYj61ZCmKIeuMB/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 31 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Manual Cibercrimen y Delitos Informáticos
+                                        </h3>
+                                        <p class="card-text">Resolución: D.G.C y E. 1011 del año 2017</p>
+                                        <a href="https://drive.google.com/file/d/1pbO0Wy8ue3IicS1DmZBXFw3QJDn30XE3/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 32 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Manual Derecho Penal - Parte General
+                                        </h3>
+                                        <p class="card-text">Carlos Julio Lascano</p>
+                                        <a href="https://drive.google.com/file/d/1slh8ASlqzbV2CuXYu-VFY6UmHeDvSLB2/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 33 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Libro Mariani de Vidal Actualizado
+                                        </h3>
+                                        <p class="card-text">Marina Mariani de Vidal, Adrian</p>
+                                        <a href="https://drive.google.com/file/d/1RDvNEj2D_fbaDnairzz1tX5WuILGGA8_/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 34 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Libro Ciberdelitos
+                                        </h3>
+                                        <p class="card-text">Gustavo E. Aboso</p>
+                                        <a href="https://drive.google.com/file/d/11m7THNlPFmbEdtgwYEvmcxoNCVJftIxN/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 35 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Libro - Teoría Pura del Derecho
+                                        </h3>
+                                        <p class="card-text">Hans Kelsen</p>
+                                        <a href="https://drive.google.com/file/d/1A6sb8O-VIl4_wCHdmpINIXQLcnHeiMVF/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 36 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Ley General Del Ambiente Comentada por Cafferatta
+                                        </h3>
+                                        <p class="card-text">Hans Kelsen</p>
+                                        <a href="https://drive.google.com/file/d/1A6sb8O-VIl4_wCHdmpINIXQLcnHeiMVF/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 37 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Ley de Ejecución de la Pena Privativa de la Libertad
+                                        </h3>
+                                        <p class="card-text">Principios básicos de la ejecución</p>
+                                        <a href="https://drive.google.com/file/d/1nF1eXxw8g_Xh50miIYtbtlgrvyQqxAGp/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 38 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Ley de Defensa del Consumidor
+                                        </h3>
+                                        <p class="card-text">Ley N° 24.240
+                                            con las modificaciones de la Ley N° 26.361
+                                            Decreto Reglamentario N° 1.798 / 94</p>
+                                        <a href="https://drive.google.com/file/d/1MfamYh9wSXjNC62bgYt1GpIJGUCEX_De/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 39 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Ley de alquileres
+                                        </h3>
+                                        <p class="card-text">ANALISIS A A CARGO DE AB. MARIANO BRIÑA
+                                            ÁREA DE LEGALES CPI
+                                            30/06/2020</p>
+                                        <a href="https://drive.google.com/file/d/1Yy8pRNE03AbpPwDwiBuxfLLNZRqGvY6p/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 40 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">LTC - Ackerman To III
+                                        </h3>
+                                        <p class="card-text">Mario E. Ackerman
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1J9DmSzkJS_4bjTnUClTHcHF5wK7FImm2/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 41 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">LTC - Ackerman T II
+                                        </h3>
+                                        <p class="card-text">Mario E. Ackerman
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1TAQj2tr9_p8eYGGUMVFZo3QYtQ4dbw58/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 42 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">LTC - Ackerman T I
+                                        </h3>
+                                        <p class="card-text">Mario E. Ackerman
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1nWabws7B3mdwLgDaqeWhhfcEaa-XW-tE/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 43 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Introducción al Derecho
+                                        </h3>
+                                        <p class="card-text">Eloy Emiliano Suárez
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1bnX-SGcv7Wyj2UtkdyEt0bKAY94R2a2t/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 44 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Introducción al Derecho Ambiental
+                                        </h3>
+                                        <p class="card-text">Néstor Cafferatta
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1t6DDrdcfPd8oga4_1Kp29PvAFTQPsmcL/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 45 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Introducción al derecho
+                                        </h3>
+                                        <p class="card-text">Carlos Santiago nino
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/141ztTi9kmC4RtTGs9jOW-CbDdb_oz3tp/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 46 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Instituciones de Derecho Civil parte general TOMO I
+                                        </h3>
+                                        <p class="card-text">Julio César Rivera - segunda parte-el sujeto
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1w4aflOU3shnl4nKP_Aa-ZE4i7g32Wma4/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 47 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Instituciones de Derecho Civil parte general TOMO I
+                                        </h3>
+                                        <p class="card-text">Julio César Rivera - primera parte-introducción
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1ZkSJEd3Y2neVy3C4ElNNMKLTbGVgEsvH/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 48 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Historia Constitucional
+                                        </h3>
+                                        <p class="card-text">Carlos Marucci - Gerardo Cires
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1LkmfflNeii0lojd8jOB_oalnnI-p9dJZ/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 49 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title"> El concepto del Derecho
+                                        </h3>
+                                        <p class="card-text">Harbert L. A. Hart
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1-T46hY09u8JMssMgxkjJbA2NHNgt282l/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 50 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title"> Guía de estudio Penal II
+                                        </h3>
+                                        <p class="card-text">Torres Neuquén
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/16ysThYJ7IxSxvVaGqqYB5wBQ9orMGI-B/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 51 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title"> Guía de estudio Derecho Procesal Penal
+                                        </h3>
+                                        <p class="card-text">Torres Neuquén
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/13CvpYwfIUN8nhhR5frHG6fsDfgz_pAGJ/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 52 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title"> Guía de Civil I Actualizada
+                                        </h3>
+                                        <p class="card-text">Dr. Miguel Ángel Font
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1RitD5TRFX4gJjNoogqxJTrkzl-vhntHV/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 53 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title"> Guía Reales
+                                        </h3>
+                                        <p class="card-text">Andrea Font
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1we0r5sJ9Z7fhIlfXXVx5hOyn35hT1ijR/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 54 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title"> Guía Práctica sobre riesgos del trabajo
+                                        </h3>
+                                        <p class="card-text">Dr. Sergio Lois
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1xhUxjL_yU-IdrrUR56LzMevtmwZHbKIA/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 55 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title"> Guía Páctica para defensores penales
+                                        </h3>
+                                        <p class="card-text">Andrea DeShazo
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1ZRoviSsqHgXP_9FZeuHWlaEiLCJy2U7y/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 56 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title"> Guía de estudio Sociedades 2017
+                                        </h3>
+                                        <p class="card-text">Matías Alan Font
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1zvnCH01IRNAnaMD-pdyxC72ennplRWkF/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 57 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title"> Guía de estudio Procesal Civil y Comercial
+                                        </h3>
+                                        <p class="card-text">Dr. Miguel Ángel Font
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1YEm7Dw3oeuXC4zkMSdKAVT6H_qPpahym/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 58 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title"> Guía de estudio Constitucional
+                                        </h3>
+                                        <p class="card-text">Dr. Miguel Ángel Font
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1zFTP4liPhJvrIY7QPpyA8DeNHFnLFFLO/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 59 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title"> Guía de estudio Concurso y quierbras
+                                        </h3>
+                                        <p class="card-text">Guía de estudio Comercial
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1p6A6fzA_8Yyznx8gJo9-UKG61C9-gEe6/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 60 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title"> Guía de estudio Administrativo
+                                        </h3>
+                                        <p class="card-text">Nueva edición
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/15DDw8OjGJFzAkJD2sw_52gSHhSGpL8tg/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 61 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title"> Guía Actualizada de Reales
+                                        </h3>
+                                        <p class="card-text">Nueva edición
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1z_4aiK78WsKlLkGXWERS2reKLy0EIDTE/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 62 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title"> El derecho como instrumento
+                                        </h3>
+                                        <p class="card-text">Gabriel M.A Vitale (coordinador)
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1RnP4OqHIyqhs4dKEQ9PYZOdphnFcqvqj/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 63 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title"> Economía Mochon y Beker
+                                        </h3>
+                                        <p class="card-text">Elementos de micro y macroeconomía
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1PBLCLitDBc4b46xmLzHpcGXBX_D5O7HU/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 64 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title"> Libro Derechos Humanos y Garantías
+                                        </h3>
+                                        <p class="card-text">Juan Antonio Travieso
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1QUbEKFXVvdQjS6UD4wDQt5DtBpdIpZKu/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 65 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title"> Codificación e interpretación Judicial en el Derecho
+                                            Pena
+                                        </h3>
+                                        <p class="card-text">F. Javier Melero
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1Zk6S2Jd72560XP600A2fuDYrrP6JytUB/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 66 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title"> Derecho de daños 2020
+
+                                        </h3>
+                                        <p class="card-text">F. Javier Melero
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1Pko7JKYrKVBK3-8Rb66giexQuUENn2Ok/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 67 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Derecho de Daños en el Código Civil y Comercial de la
+                                            Nación F
+
+                                        </h3>
+                                        <p class="card-text">Fernando Alfredo Ubiria
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1DfwZJCqKb1KFpQvs6Kt0zFIdtLJMvNRG/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 68 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Derecho Político TOMO 2
+                                        </h3>
+                                        <p class="card-text">Carlos S. Fayt
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1tSU8W54DzsEUjk_5-By5fznunH8SGlXi/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 69 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Derecho Político TOMO 1
+                                        </h3>
+                                        <p class="card-text">Carlos S. Fayt
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1Kj5nPdc3X47Kjz9Pun3av3G71MJzYUIp/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 70 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Derecho Penal - parte general
+                                        </h3>
+                                        <p class="card-text">Claus Roxin
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1-dqU3OhUWJ2yHyprVL9fD4Ckm6wEtsb-/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 71 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Derecho Penal - parte general
+                                        </h3>
+                                        <p class="card-text">Carlos Lescano
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1uynwjzm6fKF1EaUgJ5S9JbMD_MRve9rZ/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 72 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Derecho Penal- parte especial - TOMO 1
+                                        </h3>
+                                        <p class="card-text">Jorge E. Buompdre
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1a-2kHYTG55aTSIEmZgT0q3El3UsbN8JW/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 73 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Derecho de Daños 2020
+                                        </h3>
+                                        <p class="card-text">Carlos Molina Sandoval
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1UClyfV5-CNV8mbevEiu7WI56pvrz40y3/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 74 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Derecho de daños
+                                        </h3>
+                                        <p class="card-text">Marcelo López Mesa
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1EHl-Uaec5E1m-Wma61OYUIvfmNaxYd5R/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 75 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Derecho Constitucional
+                                        </h3>
+                                        <p class="card-text">Bidart
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1JIC9NA9pkOYwOgJZulxywqRjM_ChdLEu/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 76 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Derecho Constitucional
+                                        </h3>
+                                        <p class="card-text">Bidart
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1JIC9NA9pkOYwOgJZulxywqRjM_ChdLEu/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 77 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Derecho Ambiental
+                                        </h3>
+                                        <p class="card-text">Mario F. Valls
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1ndWnwW2m2gPyUsFegMYdBgQ_qob2IrOc/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 78 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Derecho Administrativo
+                                        </h3>
+                                        <p class="card-text">Avalos Buteler Massim
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1EA5TlrvlSeJcHgxRkYZw360prruAz8AK/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 79 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Derecho a la Integración
+                                        </h3>
+                                        <p class="card-text">Sandra Negro
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1wJHxe2l6wMDgj2ou-MbUrkJHXwNO2SRp/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 80 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">D. Procesal
+                                        </h3>
+                                        <p class="card-text">Claria Olmedo
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/19WcVe8ToNOT8HTuUKuxJc6Gha60PA2L4/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 81 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Cuestiones administrativas LPA
+                                        </h3>
+                                        <p class="card-text">Carlos Alredo Botassi
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1ijrK0A5_1rFX2fabwkknR0sdPmEIS1o2/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 82-->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Cossio- La Teoría Ecológica del Derecho
+                                        </h3>
+                                        <p class="card-text">Carlos Cossio
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1W5ZO7uPvTSdjD0--R6JMXL0fT0FO01ll/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 83-->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">El derecho en el derecho judicial
+                                        </h3>
+                                        <p class="card-text">Carlos Cossio
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1eh5QfarG2X6ij-7uSWiAhJ5TAqWgMZ9g/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 84-->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Contratos
+                                        </h3>
+                                        <p class="card-text">Rivera Medina - parte especial
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1BcQjRY3-MididyxaTb-Ygw2qGFyhKU2o/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 85-->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Contratos
+                                        </h3>
+                                        <p class="card-text">Rivera Medina - parte general
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/18tuxkFvjlbnqI0lS2fGY7IgaeUgkK2JA/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 86-->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Compendio de Derecho Internacional
+                                        </h3>
+                                        <p class="card-text">Oriol Casanovas Ángeles J. Rodrigo
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1VGW9gQTcAiq23n8VR5uw_1QIIugzG7Jm/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 87-->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Compendio de Derecho Internacional
+                                        </h3>
+                                        <p class="card-text">Oriol Casanovas Ángeles J. Rodrigo
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1VGW9gQTcAiq23n8VR5uw_1QIIugzG7Jm/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 88-->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Compendio de Derecho Constitucional
+                                        </h3>
+                                        <p class="card-text">German J. Bidart Campos
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1IOrHNtA9Nz811KrjVprm9mXZbgOvgjQi/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 89-->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Como hacer una demanda
+                                        </h3>
+                                        <p class="card-text">Enrique M. Falcón
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1pXdHBXZsZJ3uB-ekOZo3plZmc88USCWu/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 90-->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Código Civil y Comercial
+                                        </h3>
+                                        <p class="card-text">Enrique M. Falcón
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1OxPCywK3XtuIPhhXL9qsVGL6thvrFmkt/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 91-->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Código Procesal Penal de la Prov de Bs As
+                                        </h3>
+                                        <p class="card-text">Texto Actualizado con las modificaciones introducidas por
+                                            las Leyes 11.982, 12.059,
+                                            12.085 , 12.119 , 12.278, 12.405, 13057 y 13078
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1vfCCSn8os9N0vc1l0212STg88uCIRXIh/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 92-->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Código Penal Comentado
+                                        </h3>
+                                        <p class="card-text">Pedro F. Baldi - Ricardo Á. Basílico Federico N. De Florio
+                                            - Domitila Guerra
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1NCimEdi5OIoKzk23QvVt0po1t4nlHhN2/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 93-->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Código de Minería comentado
+                                        </h3>
+                                        <p class="card-text">Edmundo Catalano
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1K2XKC6YLC4imxGuIYfX-ObSU384J5yXJ/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 94-->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Derechos Reales
+                                        </h3>
+                                        <p class="card-text">Carlos M. Clerc
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1wXEiNWa88dsUJeqQfphhTHXe2UXA2UZc/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 95-->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Cibercrimen y Delitos Informáticos
+                                        </h3>
+                                        <p class="card-text">Los nuevos tipos penales en la era de
+                                            internet
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1LiNf0HuLJjnsB6yFKmXwAf1KJISgew20/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 96-->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Nuevo Código Civil y Comercial Unificado 2015
+                                        </h3>
+                                        <p class="card-text">Julio C. Rivera y Graciela Medina
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1E5aPJz8ou20XWhY1M8W4KCKFGuCT31sw/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 97-->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Manual Derecho Laboral
+                                        </h3>
+                                        <p class="card-text">AMANDA B. CAUBET
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1dYR9XuDohARE41kQgaiHWzLjtBrZlf2D/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 98-->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Derecho Administrativo- TOMO II
+                                        </h3>
+                                        <p class="card-text">Juan Carlos Cassagne
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1qOYDaBCPSM65GOQ65f7UVmMPIWWZ_DBU/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 99-->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Derecho Administrativo- TOMO I
+                                        </h3>
+                                        <p class="card-text">Juan Carlos Cassagne
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1yZklGGBLnHUyXibtwEAYwTH4lX0MKYun/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 100-->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Sociedad por Acciones Simplificadas
+                                        </h3>
+                                        <p class="card-text">Sebastían Balbín
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1_NCCzeOAknwBY1gTiw9_M3ju6cxRsq4q/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 101-->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Principios Constitucionales de derecho penal
+                                        </h3>
+                                        <p class="card-text">Enrique Bacigalupo
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1ChHJIvlZlfB-sdWuW3iwhlzj462bGl63/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 102-->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Manual de Derecho Romano
+                                        </h3>
+                                        <p class="card-text">LUIS RODOLFO ARGÜELLO
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1N4UiGuyXtuKbVMnTXGel11_9uNZkNwwI/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 103-->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Ley de Riesgos del Trabajo Comentada 2014
+                                        </h3>
+                                        <p class="card-text">Ackerman
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1Up_aQgPNS-kitbWmWc6mYJJLnZm_UBge/view?usp=drive_link"
+                                            class="btn btn-primary" download>Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class=" text-light py-4 color-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Información de la Biblioteca -->
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h5 class="text-uppercase">Agrupación de estudiantes de abogacía</h5>
+                    <p class="mb-0">
+                        Los sarmientos, La Rioja<br>
+                        Teléfono: +54 9 3825 40-2606<br>
+                        Correo: <a href="mailto:aea.undec@gmail.com"
+                            class="text-light text-decoration-underline">aea.undec@gmail.com</a>
+                    </p>
+                </div>
+
+                <!-- Enlaces útiles -->
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <h6 class="text-uppercase">Enlaces útiles</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Inicio</a></li>
+                        <li><a href="biblioteca.html" class="text-light text-decoration-none">Biblioteca</a></li>
+                        <li><a href="#genero" class="text-light text-decoration-none">Género</a></li>
+                        <li><a href="#contacto" class="text-light text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="col-md-3">
+                    <h6 class="text-uppercase">Síguenos</h6>
+                    <div class="d-flex">
+                        <a href="#" class="text-light me-3 fs-4"><i class="bi bi-twitter"></i></a>
+                        <a href="https://wa.me/+54 9 3825 40-2606" class="text-light me-3 fs-4" target="_blank">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="#" class="text-light me-3 fs-4"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-light my-3">
+
+            <!-- Derechos reservados -->
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Estudiantes de abogacía. Todos los derechos reservados.</p>
+                <li><strong>Diseño y Desarrollo:</strong> Demaria Pino Brisa</li>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

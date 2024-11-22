@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+        defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav id="navbar" class="navbar navbar-expand-lg fixed-top color-barra shadow">
+            <div class="container-fluid">
+                <!-- Menú hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-1 text-light"></i>
+                </button>
+                <!-- Logo -->
+                <a class="navbar-brand text-light titulo-secundario" href="#"><img src="img/logo.png" width="50"
+                        alt=""></a>
+                <!-- Enlaces -->
+                <div class="collapse navbar-collapse d-flex justify-content-center d-none d-lg-flex"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0 fs-5 titulo-secundario">
+                        <li class="nav-item">
+                            <a class="nav-link text-light active" aria-current="page" href="#" target="_self">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light active" aria-current="page"
+                                href="biblioteca.html">Biblioteca</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light active" aria-current="page" href="#genero">Género</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light active" aria-current="page" href="#contacto">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title titulo-secundario" id="offcanvasRightLabel">Menú</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav  mb-2 mb-lg-0 titulo-secundario">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="biblioteca.html">Biblioteca</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#genero">Género</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#contacto">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+        <section class="contenedor-header">
+            <div class="contenido">
+                <h1>Construyendo el Futuro de la Justicia</h1>
+                <p class="intro">
+                    Como estudiante de abogacía, cada paso que das te acerca a marcar la diferencia. Explora contenido
+                    exclusivo que te ayudará a dominar conceptos clave, perfeccionar tus argumentos y desarrollar una
+                    perspectiva profesional sólida.
+                </p>
+            </div>
+        </section>
+
+        <section class="container my-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center mb-4">Conoce Nuestra Agrupación de Estudiantes de Abogacía</h2>
+                    <div class="row">
+                        <!-- Caja 1 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="info-box">
+                                <i class="bi bi-person-circle"></i>
+                                <h5>Misión</h5>
+                                <p>Somos un grupo de estudiantes comprometidos con la defensa de los derechos humanos y
+                                    la justicia social.</p>
+                            </div>
+                        </div>
+                        <!-- Caja 2 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="info-box">
+                                <i class="bi bi-people-fill"></i>
+                                <h5>Red de Apoyo</h5>
+                                <p>Fomentamos la colaboración entre estudiantes de abogacía, brindando espacios de
+                                    intercambio de conocimiento.</p>
+                            </div>
+                        </div>
+                        <!-- Caja 3 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="info-box">
+                                <i class="bi bi-flag"></i>
+                                <h5>Objetivos</h5>
+                                <p>Promover la formación integral de los futuros abogados, realizando actividades
+                                    académicas y sociales.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de beneficios y actividades -->
+        <section class="section-benefits">
+            <div class="container">
+                <h2>Beneficios de Ser Parte de Nuestra Agrupación</h2>
+                <div class="row">
+                    <!-- Caja 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="benefit-box">
+                            <i class="bi bi-person-badge"></i>
+                            <h5>Desarrollo Profesional</h5>
+                            <p>Brindamos espacios para que los estudiantes de abogacía puedan desarrollar habilidades
+                                prácticas y profesionales.</p>
+                        </div>
+                    </div>
+                    <!-- Caja 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="benefit-box">
+                            <i class="bi bi-calendar-check"></i>
+                            <h5>Eventos Académicos</h5>
+                            <p>Organizamos conferencias, talleres y seminarios sobre temas legales de actualidad con
+                                profesionales del área.</p>
+                        </div>
+                    </div>
+                    <!-- Caja 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="benefit-box">
+                            <i class="bi bi-chat-dots"></i>
+                            <h5>Red de Apoyo</h5>
+                            <p>Fomentamos la creación de redes de apoyo entre estudiantes para resolver dudas y
+                                compartir experiencias.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container my-4">
+                <div class="main-section mb-4">
+                    <h2 class="mb-3">Explora nuestra Biblioteca</h2>
+                    <p>
+                        Descubrí un espacio pensado para tu aprendizaje y crecimiento. Aquí encontrarás recursos
+                        actualizados, materiales especializados y un ambiente ideal para profundizar tus conocimientos.
+                        ¡Sumergite en el mundo del saber y aprovechá todo lo que tenemos para ofrecerte!
+                    </p>
+                    <a href="biblioteca.html" class="btn btn-primary">Leer más</a>
+                </div>
+
+                <!-- News Feed -->
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="video-section mb-4">
+                            <img src="img/biblioteca.jpg" alt="Video Thumbnail" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="news-feed">
+                            <h5>Noticias de la Biblioteca</h5>
+                            <div class="news-item">
+                                <strong>Recursos Académicos Jurídicos</strong> - Nuevas adquisiciones de libros
+                                relacionados con derecho civil, penal, Constitucional, internacional, etc
+                            </div>
+                            <div class="news-item">
+                                <strong>Noticias Jurídicas</strong> - Cambios recientes en la legislacióm o normativas
+                                locales e internacionales.
+                            </div>
+                            <div class="news-item">
+                                <strong>Eventos y Talleres</strong> - Charlas o seminarios organizados en la universidad
+                                sobre temas legales.
+                            </div>
+                            <div class="news-item">
+                                <strong>Desarrollo Profesional</strong> - Recomendaciones de libros para futuros
+                                abogados, como temas de ética profesional, técnias de oratoria o redacción de contratos.
+                            </div>
+                        </div>
+                        <button class="btn btn-light mt-3" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#moreInfo" aria-expanded="false" aria-controls="moreInfo">
+                            Ver más información
+                        </button>
+
+                        <div class=" collapse mt-3" id="moreInfo">
+                            <div class="card card-body text-dark">
+                                <ul>
+                                    <li><strong>Publicaciones Académicas</strong> Presentación de artículos por
+                                        estudiantes o docentes en revistas académicas.</li>
+                                    <li><strong>Recursos Digitales</strong> Destacar recursos como respositorios de
+                                        tesis, legislación comparada o bases de datos de investigación</li>
+                                    <li><strong>Comunidad Estudiantil</strong> Historias de éxito de estudiantes que han
+                                        usado la biblioteca como recuso clave.</li>
+                                    <li><strong>Bibliografía recomendada</strong> Ofrece lista de libros y textos
+                                        recomendados por los profesores o que son fundamentales para los recursos del
+                                        programa de derecho.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Highlight Section -->
+                <div class="highlight-section">
+                    <div class="highlight-card news">
+                        <h3>Procesos de protección en violencia de género</h3>
+                        <h4>pdf</h4>
+                        <p>Procedimiento en fueros de familia y penal. Intervención de organismo de Promoción y
+                            Protección
+                            de los Derechos del Niño, Niña y adolescente.</p>
+                        <a href="https://drive.google.com/file/d/1K67zD8h4R1vDXB5MphBBvmSikWcyjiG7/view?usp=drive_link"
+                            class="btn btn-light">Leer más</a>
+                    </div>
+                    <div class="highlight-card spotlight">
+                        <h3>Tratado de Derecho Administrativa Gordillo</h3>
+                        <h4>pdf</h4>
+                        <p>Tratado de derecho administrativo y obras selectas- tomo 8. Primera edición, Teoría general
+                            del
+                            derecho administrativo.</p>
+                        <a href="https://drive.google.com/file/d/1YOdhP75-JaNjbItz_g6t_3XeKhdFYfgg/view?usp=drive_link"
+                            class="btn btn-light">Leer más</a>
+                    </div>
+                    <div class="highlight-card news">
+                        <h3>Soto-Manual de derecho de la integración - 2016</h3>
+                        <h4>pdf</h4>
+                        <p>Sumario, primaria parte. Introducción al derecho de la integración el integrativismo
+                            tridimensionalista trialista.Marco conceptual y terminológico.</p>
+                        <a href="https://drive.google.com/file/d/182CIaJ6XPx40Tnx57xO4Paq16P71UhG1/view?usp=drive_link"
+                            class="btn btn-light">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container my-5 style="style="background-color: #f8f9fa;" id="genero">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="mb-4">Género</h2>
+                    <p class="lead">En esta sección encontrarás información relevante y recursos sobre género, dirigidos
+                        especialmente a estudiantes de abogacía. Explora los archivos y no dudes en contactarnos para
+                        más información.</p>
+                </div>
+            </div>
+            <div class="row text-center justify-content-center mt-4">
+                <!-- Archivo PDF 1 -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <i class="bi bi-file-earmark-pdf-fill text-danger" style="font-size: 3rem;"></i>
+                            <h5 class="card-title mt-3">Comisión de Género</h5>
+                           
+                            <a href="img/284-21 Comisión de Género (5).pdf" class="btn btn-danger" download>
+                                Descargar PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Archivo PDF 2 -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <i class="bi bi-file-earmark-pdf-fill text-danger" style="font-size: 3rem;"></i>
+                            <h5 class="card-title mt-3">Ordenanza</h5>
+                          
+                            <a href="img/Ordenanza-No-024-20-PROTOCOLO-DE-INTERVENCION-INSTITUCIONAL-ANTE-SITUACIONES-DE-VIOLENCIA-DE-G.pdf" class="btn btn-danger" download>
+                                Descargar PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center mt-5">
+                <div class="col-12">
+                    <h5>Contacto</h5>
+                    <p class="text-muted">¿Tienes dudas o sugerencias? Contáctanos por el mail de la comisón</p>
+                    <a href="mailto: generoydiversidad@undec.edu.ar" class="btn btn-outline-primary">
+                        generoydiversidad@undec.edu.ar
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección llamativa con imagen de fondo fija -->
+        <section class="section-llamativa">
+            <div class="container">
+                <h2>¡Únete a Nuestra Agrupación de Estudiantes de Abogacía!</h2>
+                <p>Somos un grupo <span class="highlight">comprometido</span> con la justicia, la equidad y el
+                    desarrollo profesional. Si estás buscando formar parte de una comunidad activa que promueve la
+                    defensa de los derechos humanos y la formación integral de futuros abogados, ¡estás en el lugar
+                    adecuado!</p>
+                <a href="mailto:aea.undec@gmail.com" class="btn-cta">¡Forma Parte Hoy Mismo!</a>
+            </div>
+        </section>
+
+        <section id="contacto" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Contáctanos</h2>
+                <p class="text-center mb-5">
+                    Estamos aquí para responder a tus preguntas sobre nuestra universidad, programas académicos o
+                    eventos. ¡Contáctanos por cualquiera de las siguientes vías!
+                </p>
+                <div class="row">
+                    <!-- Dirección -->
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="icon mb-3">
+                            <i class="bi bi-geo-alt-fill" style="font-size: 2rem; color: #007bff;"></i>
+                        </div>
+                        <h5>Dirección</h5>
+                        <p>Los Sarmientos, La Rioja</p>
+                    </div>
+                    <!-- Teléfono -->
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="icon mb-3">
+                            <i class="bi bi-telephone-fill" style="font-size: 2rem; color: #007bff;"></i>
+                        </div>
+                        <h5>Teléfono</h5>
+                        <p><a href="tel:+34123456789" class="text-decoration-none text-dark">+54 9 3825 40-2606</a></p>
+                    </div>
+                    <!-- Correo -->
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="icon mb-3">
+                            <i class="bi bi-envelope-fill" style="font-size: 2rem; color: #007bff;"></i>
+                        </div>
+                        <h5>Email</h5>
+                        <p><a href="mailto:aea.undec@gmail.com"
+                                class="text-decoration-none text-dark">aea.undec@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class=" text-light py-4 color-footer">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Información de la Biblioteca -->
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <h5 class="text-uppercase">Agrupación de estudiantes de abogacía</h5>
+                        <p class="mb-0">
+                            Los sarmientos, La Rioja<br>
+                            Teléfono: <a href=" +54 9 3825 40-2606"></a> +54 9 3825 40-2606<br>
+                            Correo: <a href="mailto:aea.undec@gmail.com"
+                                class="text-light text-decoration-underline">aea.undec@gmail.com</a>
+                        </p>
+                    </div>
+
+                    <!-- Enlaces útiles -->
+                    <div class="col-md-3 mb-3 mb-md-0">
+                        <h6 class="text-uppercase">Enlaces útiles</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-light text-decoration-none">Inicio</a></li>
+                            <li><a href="biblioteca.html" class="text-light text-decoration-none">Biblioteca</a></li>
+                            <li><a href="#genero" class="text-light text-decoration-none">Género</a></li>
+                            <li><a href="#contacto" class="text-light text-decoration-none">Contacto</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Redes sociales -->
+                    <div class="col-md-3">
+                        <h6 class="text-uppercase">Síguenos</h6>
+                        <div class="d-flex">
+                            <a href="#" class="text-light me-3 fs-4"><i class="bi bi-twitter"></i></a>
+                            <a href="https://wa.me/+54 9 3825 40-2606" class="text-light me-3 fs-4" target="_blank">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/aea.undec/" class="text-light me-3 fs-4"><i
+                                    class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="border-light my-3">
+
+                <!-- Derechos reservados -->
+                <div class="text-center">
+                    <p class="mb-0">&copy; 2024 Estudiantes de abogacía. Todos los derechos reservados.</p>
+                    <li><strong>Diseño y Desarrollo:</strong> Demaria Pino Brisa</li>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+
+
+</html>

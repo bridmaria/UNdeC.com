@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#navbar {
+    background-color: #ff8834;
+    /* Fondo inicial */
+    transition: all 0.4s ease-in-out;
+    /* Transición suave */
+    padding: 10px;
+    /* Espaciado inicial */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Estilo del navbar al hacer scroll ===== */
+.navbar-scrolled {
+    background-color: rgba(0, 0, 0, 1);
+    /* Fondo más oscuro */
+    padding: 10px;
+    /* Reducir padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Sombra más intensa */
+}
+
+/* ===== Animación del navbar al cargar la página ===== */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#navbar {
+    animation: slideDown 0.8s ease-out;
+}
+
+/* ===== Enlaces del navbar ===== */
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #f1c40f;
+    /* Color dorado al pasar el mouse */
+}
+
+/* Subrayado animado */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* ===== Animación del offcanvas ===== */
+.offcanvas-end {
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.offcanvas.show {
+    transform: translateX(0);
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+.contenedor-header {
+    position: relative;
+    background-image: url('../img/unicopia.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.contenedor-header .contenido {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente para resaltar el texto */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contenedor-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.contenedor-header .intro {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.main-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.news-feed {
+    background-color: #ff8834;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.news-feed h5 {
+    font-weight: bold;
+}
+
+
+/*------cajas------*/
+
+.highlight-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.highlight-card {
+    flex: 1;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+}
+
+.highlight-card.news {
+    background-color: #ddd
+}
+
+.highlight-card.spotlight {
+    background-color: #ddd;
+}
+
+.highlight-card h3 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: black;
+}
+
+.highlight-card h4 {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.highlight-card p{
+    color: black;
+}
+/*--------------------*/
+.contenedor-header {
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contenedor-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.contenedor-header .intro {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.img-fluid {
+    border-radius: 10px;
+}
+
+/*----------------------------------*/
+#contacto .icon {
+    display: inline-block;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #e9f5ff;
+}
+
+#contacto h5 {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#contacto p {
+    margin: 0;
+    color: #555;
+}
+
+#contacto a {
+    color: #007bff;
+}
+
+#contacto a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/*----------------------------*/
+.color-footer {
+    background-color: #ff8834;
+}
+
+.info-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.info-box i {
+    font-size: 40px;
+    color: #ff8834;
+}
+
+.info-box h5 {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.info-box p {
+    color: #555;
+}
+
+/*------------------------------------------*/
+.section-llamativa {
+    background-image: url('../img/libros.jpg');
+    /* Cambia esta URL por tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Efecto de imagen fija */
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilo para el texto destacado */
+.highlight {
+    font-weight: bold;
+    color: #ff9800;
+    /* Puedes cambiar el color */
+}
+
+/* Sombra en el texto para mejor legibilidad */
+.section-llamativa h2,
+.section-llamativa p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para el título */
+.section-llamativa h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Estilo para el texto */
+.section-llamativa p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    /* Para suavizar el texto sobre la imagen */
+}
+
+/* Estilo para el botón CTA */
+.btn-cta {
+    background-color: #ff9800;
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+/* Efecto de hover en el botón */
+.btn-cta:hover {
+    background-color: #e68900;
+}
+
+.section-llamativa .container {
+    position: relative;
+    z-index: 2;
+}
+
+/**/
+.section-benefits {
+    background-image: url('../img/collage.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-benefits h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section-benefits h5 {
+    color: black;
+}
+
+.benefit-box {
+    background-color: rgba(255, 255, 255, 0.85);
+    /* Fondo blanco con algo de transparencia */
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.benefit-box:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-box i {
+    font-size: 40px;
+    color: #ff8834;
+}
+
+.benefit-box h5 {
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.benefit-box p {
+    color: #555;
+    font-size: 16px;
+}
+
+.section-benefits .row {
+    margin-top: 30px;
+}
+
+.section-benefits .container {
+    position: relative;
+    z-index: 1;
+}
+
+/*biblioteca*/
+.note-item {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.note-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/*------biblioteca-------*/
+/* General container styling */
+.container {
+    padding: 20px;
+}
+
+/* Card styling */
+.card {
+    border: none;
+    /* Sin borde */
+    border-radius: 20px;
+    /* Bordes redondeados */
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    /* Efecto de luz suave */
+   
+    /* Sombra 3D */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    /* Efecto de elevación */
+    box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.2), -12px -12px 24px rgba(255, 255, 255, 0.9);
+    /* Sombra más pronunciada */
+}
+
+/* Card body */
+.card-body {
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(145deg, #f8f9fa, #e6e6e6);
+    /* Fondo degradado */
+    border-radius: 15px;
+}
+
+/* Card title */
+.card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    /* Gris oscuro */
+    margin-bottom: 15px;
+}
+
+/* Card text */
+.card-text {
+    font-size: 1rem;
+    color: #666;
+    /* Gris medio */
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.btn {
+    background: linear-gradient(145deg, #d4600d, #ff8834);
+    /* Degradado azul */
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    /* Botón más redondeado */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2), -3px -3px 8px rgba(255, 255, 255, 0.5);
+    /* Sombra suave */
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(145deg, #0056b3, #003f7f);
+    /* Azul más oscuro */
+    transform: scale(1.05);
+    /* Botón ligeramente más grande */
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3), -5px -5px 12px rgba(255, 255, 255, 0.6);
+    /* Sombra más pronunciada */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}
